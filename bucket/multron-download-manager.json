@@ -1,0 +1,32 @@
+{
+    "version": "0.0.11",
+    "description": "Fast, cross-platform multi-connection download manager with yt-dlp and BitTorrent support",
+    "homepage": "https://github.com/Multron-Community/Multron-Download-Manager",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Multron-Community/Multron-Download-Manager/releases/download/v0.0.11/Multron-Download-Manager-0.0.11-x64-portable.zip",
+            "hash": "1244825e70f44e47988360242285cc7194485ea38180c027c9b955f8c0f18a91",
+            "extract_dir": "Multron-Download-Manager"
+        }
+    },
+    "bin": "multron-download-manager.exe",
+    "shortcuts": [
+        [
+            "multron-download-manager.exe",
+            "Multron Download Manager"
+        ]
+    ],
+    "persist": "portable.txt",
+    "checkver": {
+        "github": "https://github.com/Multron-Community/Multron-Download-Manager"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Multron-Community/Multron-Download-Manager/releases/download/v$version/Multron-Download-Manager-$version-x64-portable.zip",
+                "extract_dir": "Multron-Download-Manager"
+            }
+        }
+    }
+}
