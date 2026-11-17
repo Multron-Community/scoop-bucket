@@ -1,0 +1,18 @@
+name: Excavator
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * *' # Her gece UTC 04:00'te yeni sürüm kontrolü yapar
+
+permissions:
+  contents: write
+
+jobs:
+  excavate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ScoopInstaller/GithubActions@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
