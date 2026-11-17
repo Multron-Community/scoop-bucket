@@ -7,7 +7,7 @@ Official [Scoop](https://scoop.sh) bucket for **Multron Download Manager** and r
 1. Add the Multron bucket to Scoop:
 
 ```powershell
-scoop bucket add multron [https://github.com/Multron-Community/scoop-bucket](https://github.com/Multron-Community/scoop-bucket)
+scoop bucket add multron https://github.com/Multron-Community/scoop-bucket
 ```
 
 2. Install **Multron Download Manager**:
